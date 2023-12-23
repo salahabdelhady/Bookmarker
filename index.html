@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="shortcut icon" href="images/images (1).jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <div class="main w-75 mx-auto my-5" id="main">
+            <div class="h1 mx-auto">
+            <h1 class="text-capitalize mx-auto  mx-auto mb-4 position-relative text-center  text-capitalize text-capitalize mx-auto">bookmarker</h1>
+            </div>
+            <div class="dataEnter p-3 py-5 mb-3">
+                <h2 class="text-center font-wave filter"><i class="fa-solid fa-bookmark fa-1x"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark fa-1x"></i></h2>
+                <label for="siteName" class="fw-bold text-capitalize fs-5 mb-1"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name :</label>
+                <input type="text" name="siteName" id="siteName" class="form-control" oninput="validatename()" placeholder="example"/>
+                <div id="validationMessageName" class="m-0 p-0 text-center">
+                </div>
+                <label for="siteLink" class="fw-bold text-capitalize fs-5 mt-4 mb-1"><i class="fa-solid fa-link me-2"></i>Site URL :</label>
+                <input type="text" name="siteLink" id="siteLink" class="form-control" oninput="validateLink()" placeholder="wwww.example.com"/>
+                <div id="validationMessageurl" class="m-0 p-0 text-center">
+                </div>
+                <div class="text-center my-4">
+                    
+                <button class="btn btn-outline-success px-5 py-2 fs-4" onclick="takeInput()" >Submit</button>
+                <div class="empity" id="empty">
+                </div>
+                </div>
+            </div>
+            <table class="table text-center w-75 mx-auto ">
+                <thead>
+                    <th class="text-capitalize fw-bold ">Index</th>
+                    <th class="text-capitalize fw-bold ">Website name</th>
+                    <th class="text-capitalize fw-bold ">Visit</th>
+                    <th class="text-capitalize fw-bold ">Delete</th>
+                </thead>
+                <tbody id="tableBody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="js/"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
